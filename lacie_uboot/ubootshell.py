@@ -289,7 +289,7 @@ class Ubootshell(object):
         prompt = False
         len_command = 0
         # Don't try to wait for a prompt with bootm
-        if cmd in 'bootm':
+        if 'bootm' in cmd:
             sock.close()
             return 42
 
